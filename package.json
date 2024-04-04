@@ -1,0 +1,17 @@
+{
+    "name": "stkjs-server",
+    "version": "0.0.1",
+    "description": "The Shoejunk Tool Kit for JavaScript Server Library",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/shoejunk/stkjs-server.git"
+    },
+    "license": "MIT",
+    "author": "Shoejunk Industries",
+    "dependencies": {
+        "jquery": "^3.7.1",
+        "jsdom": "^24.0.0",
+        "stkjs-core": "file:../stkjs-core"
+    },
+    "main": "./main.mjs"
+}
