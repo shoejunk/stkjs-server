@@ -1,4 +1,8 @@
 import * as STKJS from 'stkjs-core';
-import JSDOM from 'jsdom';
+import * as JSDOM from 'jsdom';
 
-STKJS.UTIL.log('stkjs-server loaded');
+JSDOM.JSDOM.fromFile('index.html', {}).then(dom =>
+{
+    console.log(dom.window.document.querySelector("p").textContent); // "Hello world"
+    STKJS.UTIL.log('stkjs-server loaded');
+});
